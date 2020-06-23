@@ -16,6 +16,7 @@ public class Leet_53_MaximumSubarray {
         for (int i = 1; i < nums.length; i++) {
             sum[i] = Math.max(nums[i], sum[i - 1] + nums[i]);
             max = Math.max(max, sum[i]);
+//            System.out.println("sum : " + Arrays.toString(sum));
         }
         return max;
     }
